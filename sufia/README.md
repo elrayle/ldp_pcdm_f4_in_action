@@ -13,11 +13,9 @@ LDP-PCDM-F4 in Action uses the example of a work "Raven" with a few files, that 
 Here is a slight adjustment based on the assumptions from which I have been working.
 
 Changes:
-* addition of proxies for GenericFiles (required)
+* addition of proxies for GenericFiles
 * /works/raven/members is an IC
-
-* insertion of Hydra::Works between Sufia specific class and Hydra::PCDM.  Unless Sufia needs to extend the definitions of 
-GenericFile and GenericWork even more, Sufia should use Hydra::Works classes.
+* insertion of Hydra::Works between Sufia specific class and Hydra::PCDM.  Unless Sufia needs to extend the definitions of GenericFile and GenericWork even more, Sufia should use Hydra::Works classes.
 
 
     LDP  Fedora URI                                       Sufia class         Hydra::Works class         Hydra::PCDM class      
