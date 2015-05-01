@@ -17,32 +17,33 @@ Changes:
 * /works/raven/members is an IC
 * insertion of Hydra::Works between Sufia specific class and Hydra::PCDM.  Unless Sufia needs to extend the definitions of GenericFile and GenericWork even more, Sufia should use Hydra::Works classes.
 
+```
+LDP  Fedora URI                                       Sufia class         Hydra::Works class         Hydra::PCDM class      
+---  -----------------------------------------------  ------------------  -------------------------  -----------------   
+BC   /works                
+BC   /works/raven                                     Sufia::Work         Hydra::Works::GenericWork  Hydra::PCDM::Object    
+IC   /works/raven/members
+RS   /works/raven/members/coverjpgProxy
+RS   /works/raven/members/ravenpdfProxy
 
-    LDP  Fedora URI                                       Sufia class         Hydra::Works class         Hydra::PCDM class      
-    ---  -----------------------------------------------  ------------------  -------------------------  -----------------   
-    BC   /works                
-    BC   /works/raven                                     Sufia::Work         Hydra::Works::GenericWork  Hydra::PCDM::Object    
-    IC   /works/raven/members
-    RS   /works/raven/members/coverjpgProxy
-    RS   /works/raven/members/ravenpdfProxy
-    
-    DC   /works/raven/genfiles                            [1]        
-                       
-    BC   /works/raven/genfiles/cover.jpg                  Sufia::GenericFile  Hydra::Works::GenericFile  Hydra::PCDM::Object    
-    DC   /works/raven/genfiles/cover.jpg/files            [1]                
-    NR   /works/raven/genfiles/cover.jpg/files/content    Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
-    NR   /works/raven/genfiles/cover.jpg/files/thumbnail  Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
-                    
-    BC   /works/raven/genfiles/raven.pdf                  *Sufia::GenericFile*  Hydra::Works::GenericFile  Hydra::PCDM::Object  
-    DC   /works/raven/genfiles/raven.pdf/files            [1]                
-    NR   /works/raven/genfiles/raven.pdf/files/content    Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
-    NR   /works/raven/genfiles/raven.pdf/files/thumbnail  Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
-    NR   /works/raven/genfiles/raven.pdf/files/text       Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
-    
-    BC   /collections
-    BC   /collections/poe                                 Sufia:Collections   Hydra::Works::Collection   Hdyra::PCDM::Collection
-    IC   /collections/poe/members
-    RS   /collections/poe/members/ravenProxy
+DC   /works/raven/genfiles                            [1]        
+                   
+BC   /works/raven/genfiles/cover.jpg                  Sufia::GenericFile  Hydra::Works::GenericFile  Hydra::PCDM::Object    
+DC   /works/raven/genfiles/cover.jpg/files            [1]                
+NR   /works/raven/genfiles/cover.jpg/files/content    Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
+NR   /works/raven/genfiles/cover.jpg/files/thumbnail  Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
+                
+BC   /works/raven/genfiles/raven.pdf                  *Sufia::GenericFile*  Hydra::Works::GenericFile  Hydra::PCDM::Object  
+DC   /works/raven/genfiles/raven.pdf/files            [1]                
+NR   /works/raven/genfiles/raven.pdf/files/content    Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
+NR   /works/raven/genfiles/raven.pdf/files/thumbnail  Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
+NR   /works/raven/genfiles/raven.pdf/files/text       Sufia::File         Hydra::Works::File         Hydra::PCDM::File      
+
+BC   /collections
+BC   /collections/poe                                 Sufia:Collections   Hydra::Works::Collection   Hdyra::PCDM::Collection
+IC   /collections/poe/members
+RS   /collections/poe/members/ravenProxy
+```
 
 Fetching `/works/raven` will return 
 
